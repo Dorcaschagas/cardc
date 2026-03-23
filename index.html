@@ -1,443 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CarDC — Convite para Testadores</title>
-    <meta
-      name="description"
-      content="Convite para baixar e testar o CarDC. Cupom FREE90 por 90 dias no plano anual."
-    />
-    <!-- Bootstrap 5 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/icone.png" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark topbar py-3">
-      <div class="container">
-        <div class="d-flex align-items-center gap-3">
-          <div
-            style="
-              width: 44px;
-              height: 44px;
-              border-radius: 10px;
-              background: linear-gradient(135deg, var(--accent), #3b82f6);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-weight: 700;
-              color: #071019;
-            "
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO / Palavras-chave -->
+  <title>CarDC – Controle de Gastos do Carro e Moto | App Gratuito</title>
+  <meta name="description" content="Controle todos os gastos do seu carro ou moto: abastecimento, manutenção, seguro, IPVA, estacionamento e muito mais. Baixe grátis para Android e iOS." />
+  <meta name="keywords" content="controle de gastos carro, app controle veículo, aplicativo manutenção carro, controle abastecimento, gestão carro, app carro android, app carro iphone, controle combustível, lembrete troca de óleo, seguro veicular app, controle moto, CarDC" />
+
+  <!-- Open Graph (para anúncios e compartilhamento) -->
+  <meta property="og:title" content="CarDC – Controle Total do Seu Carro" />
+  <meta property="og:description" content="Abastecimento, manutenção, seguro, viagens e muito mais. Tudo em um app gratuito." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Palavras-chave ocultas para SEO -->
+<span class="keywords-seo">
+  controle de gastos carro app android ios, aplicativo para controlar gastos do carro,
+  app manutenção carro, controle abastecimento veículo, lembrete troca de óleo,
+  app seguro carro, controle ipva multa, gastos com carro app gratuito,
+  controle combustível km litro, app moto controle gastos, melhor app para carro brasil
+</span>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-badge">📱 Disponível para Android e iOS</div>
+  <h1>Controle total dos gastos<br>do seu <span>carro ou moto</span></h1>
+  <p>Abastecimento, manutenção, seguro, viagens, estacionamento e muito mais — tudo em um único app gratuito.</p>
+
+  <div class="cta-group">
+    <a href="https://play.google.com/store/apps/details?id=com.dorcaschagas.car_controll&pcampaignid=web_share" class="btn btn-android">
+      <svg viewBox="0 0 24 24"><path d="M17.523 15.341c-.32 0-.578-.259-.578-.578V9.237c0-.32.259-.578.578-.578s.578.259.578.578v5.526c0 .319-.259.578-.578.578zm-11.046 0c-.32 0-.578-.259-.578-.578V9.237c0-.32.259-.578.578-.578s.578.259.578.578v5.526c0 .319-.258.578-.578.578zm1.945 3.146c0 .475.385.86.86.86s.86-.385.86-.86v-1.573H8.422v1.573zm4.717 0c0 .475.385.86.86.86s.86-.385.86-.86v-1.573h-1.72v1.573zM6.1 8.085C6.1 7.074 6.932 6.25 7.95 6.25h8.1c1.018 0 1.85.824 1.85 1.835v8.033H6.1V8.085zm5.55-5.585L12.5 1l.5 1h-1.35zM7.2 3.2l1 1.5H5.7L7.2 3.2zm9.6 0l1.5 1.5H15.8L16.8 3.2z"/></svg>
+      Google Play
+    </a>
+    <a href="https://apps.apple.com/us/app/orthocal-dental-analyses/id6636519508" class="btn btn-ios">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      App Store
+    </a>
+  </div>
+
+  <!-- Mockup do celular -->
+  <div class="mockup-wrap">
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="phone-topbar">
+          🚗 CarDC
+          <small>Controle de Gastos</small>
+        </div>
+        <div class="phone-grid">
+          <div class="phone-card">
+            <div class="icon">⛽</div>
+            <div class="label">Abastecimento</div>
+            <div class="sub">Registrar novo</div>
           </div>
-          <div>
-            <div class="h5 mb-0">CarDC</div>
-            <div class="small-muted">
-              Controle de combustível, manutenção e custos
-            </div>
+          <div class="phone-card">
+            <div class="new-badge">Novo</div>
+            <div class="icon">🗺️</div>
+            <div class="label">Viagens</div>
+            <div class="sub">Rotas e gastos</div>
+          </div>
+          <div class="phone-card">
+            <div class="icon">🔧</div>
+            <div class="label">Manutenção</div>
+            <div class="sub">Adicionar serviço</div>
+          </div>
+          <div class="phone-card">
+            <div class="icon">🛡️</div>
+            <div class="label">Seguro</div>
+            <div class="sub">Gerenciar</div>
+          </div>
+          <div class="phone-card">
+            <div class="new-badge">Novo</div>
+            <div class="icon">🅿️</div>
+            <div class="label">Estacionamentos</div>
+            <div class="sub">Registrar gasto</div>
+          </div>
+          <div class="phone-card">
+            <div class="icon">📊</div>
+            <div class="label">Relatórios</div>
+            <div class="sub">Ver estatísticas</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ─────────────────────────────────────────────── -->
+<div class="stats">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">10+</div>
+      <div class="stat-lbl">Funcionalidades</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-lbl">Gratuito para baixar</div>
+    </div>
+    <div>
+      <div class="stat-num">🚗🏍️</div>
+      <div class="stat-lbl">Carro e Moto</div>
+    </div>
+    <div>
+      <div class="stat-num">0</div>
+      <div class="stat-lbl">Surpresas no orçamento</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FEATURES ──────────────────────────────────────────── -->
+<div class="section">
+  <h2 class="section-title">Tudo que seu veículo precisa</h2>
+  <p class="section-sub">Pare de usar planilhas. Tenha controle real em segundos.</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">⛽</div>
+      <h3>Abastecimento</h3>
+      <p>Registre cada abastecimento e acompanhe o consumo médio (km/l) do seu veículo.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔧</div>
+      <h3>Manutenção</h3>
+      <p>Histórico completo de revisões, troca de óleo, pneus e freios com alertas de vencimento.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <h3>Seguro</h3>
+      <p>Gerencie apólices e receba alertas antes do vencimento para nunca ficar desprotegido.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🗺️</div>
+      <h3>Viagens</h3>
+      <p>Calcule o custo real da viagem com base no consumo, preço do combustível e distância.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📄</div>
+      <h3>Documentação</h3>
+      <p>IPVA, multas, licenciamento — organize tudo e nunca perca um prazo importante.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🅿️</div>
+      <h3>Estacionamentos</h3>
+      <p>Registre gastos com estacionamentos e descubra quanto você gasta por mês.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <h3>Agendamentos</h3>
+      <p>Agende revisões, viagens e serviços. Integra com o calendário do seu telefone.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>Alertas</h3>
+      <p>Saiba com antecedência o que está vencendo: óleo, pneu, seguro, agenda e mais.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Relatórios</h3>
+      <p>Gráficos mensais de todos os gastos para você tomar decisões com dados reais.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMO FUNCIONA ──────────────────────────────────────── -->
+<div style="background:#f5f7fa; padding: 64px 24px;">
+  <div style="max-width:1000px; margin:0 auto;">
+    <h2 class="section-title">Como funciona?</h2>
+    <p class="section-sub">Simples. Rápido. Sem complicação.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
         <div>
-          <a href="#download" class="btn btn-outline-light btn-sm m-2"
-            >Baixe Agora</a
-          >
+          <h3>Cadastre seu veículo</h3>
+          <p>Adicione seu carro ou moto com placa, modelo e ano. O app busca o valor FIPE automaticamente.</p>
         </div>
       </div>
-    </nav>
-
-    <header class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="car-gif-wrapper mb-3 text-center p-5">
-              <img
-                src="img/car-12628_256.gif"
-                alt="Carro animado"
-                class="car-gif"
-              />
-            </div>
-            <h1 class="display-6 fw-bold">
-              Convite para testar o
-              <span style="color: var(--accent)"
-                >CarDC - Controle de Gastos do seu Veículo</span
-              >
-            </h1>
-            <p class="lead text-grey mt-3">
-              Ajude a melhorar o app testando e ganhe um
-              <strong>cupom de 90 dias</strong> no plano anual.
-            </p>
-
-            <!-- <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
-              <a
-                id="appstore"
-                href="https://apps.apple.com/br/app/cardc/id6754003722"
-                class="btn btn-light btn-lg me-2"
-                aria-label="Baixar na App Store"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg"
-                  alt="App Store"
-                  style="
-                    height: 20px;
-                    vertical-align: middle;
-                    margin-right: 8px;
-                  "
-                />
-                App Store
-              </a>
-              <a
-                id="playstore"
-                href="https://play.google.com/store/apps/details?id=com.dorcaschagas.car_controll"
-                class="btn btn-accent btn-lg"
-                aria-label="Baixar no Google Play"
-                >Google Play</a
-              >
-            </div> -->
-
-            <div class="mt-4">
-              <div class="coupon d-inline-block">
-                <div class="fw-semibold">
-                  Cupom teste: <span class="fw-bold">FREE90</span>
-                </div>
-                <div class="small-muted">
-                  Validade: 90 dias após resgate. Use ao ativar o plano anual.
-                </div>
-                <a
-                  id="playstore"
-                  href="https://apps.apple.com/redeem?ctx=offercodes&id=6754003722&code=FREE90"
-                  class="btn btn-accent bg-white btn-lg col-12 col-md-8 m-2"
-                >
-                  Resgatar Código no iOS e<br />
-                  <small>Baixar App</small>
-                </a>
-                <a
-                  id="playstore"
-                  href="https://play.google.com/redeem?code=FREE90"
-                  class="btn btn-accent btn-lg col-12 col-md-8 m-2"
-                >
-                  Resgatar Código no Android e<br />
-                  <small>Baixar App</small>
-                </a>
-              </div>
-            </div>
-
-            <!-- <p class="mt-4 small-muted">
-              Vou compartilhar esse convite em grupos de WhatsApp, Facebook e
-              LinkedIn — se puder, baixe, teste e deixe sua avaliação. Seu
-              feedback é essencial.
-            </p> -->
-          </div>
-
-          <div class="col-lg-5 mt-4 mt-lg-0 text-center">
-
-            <div class="">
-              <img
-                src="img/icone.png"
-                alt="Print CarDC"
-                class="print-image mb-3"
-                style="height: 280px;"
-              />
-              <div class="small-muted">
-
-              </div>
-            </div>
-          </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Registre seus gastos</h3>
+          <p>Abastecimento, manutenção, seguro, estacionamento — tudo em poucos toques.</p>
         </div>
       </div>
-    </header>
-
-    <main class="pb-5">
-      <div class="container">
-        <section class="mb-4">
-          <div class="row gy-4">
-            <div class="col-12">
-              <div class="d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">Principais funcionalidades</h3>
-                <div class="small-muted">
-                  <!-- 4 telas principais com descrição rápida -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature 1 --> 
-            <div class="col-12">
-              <div class="row align-items-center g-3 feature-card">
-                <div class="col-md-5 text-center">
-                  <img
-                    src="img/fuel-8327_256.gif"
-                    alt="Abastecimentos"
-                    class="print-image"
-                    style="height: 280px; width: auto;"
-                  />
-                </div>
-                <div class="col-md-7">
-                  <h5>Controle de abastecimentos</h5>
-                  <p class="small-muted">
-                    Registre abastecimentos com preço, litros e odômetro. O
-                    CarDC calcula automaticamente o consumo médio por km e
-                    mostra histórico por período.
-                  </p>
-                  <!-- <a
-                    class="learn-link"
-                    data-bs-toggle="collapse"
-                    href="#more1"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="more1"
-                    >Saiba mais</a
-                  > -->
-                  <!-- <div class="collapse mt-2" id="more1">
-                    <div class="small-muted">
-                      Ex.: adicionar abastecimento com foto do comprovante;
-                      filtro por veículo e exportação CSV para planilhas.
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="col-12">
-              <div
-                class="row align-items-center g-3 feature-card flex-md-row-reverse"
-              >
-                <div class="col-md-5">
-                  <img
-                    src="img/high-3999.gif"
-                    alt="Alertas de manutenção"
-                    class="print-image"
-                    style="height: 280px"
-                  />
-                </div>
-                <div class="col-md-7">
-                  <h5>Alertas de manutenção</h5>
-                  <p class="small-muted">
-                    Lembretes para trocas de óleo, revisão, pneus e
-                    outros serviços. Configuração por km ou por data.
-                  </p>
-                  <!-- <a
-                    class="learn-link"
-                    data-bs-toggle="collapse"
-                    href="#more2"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="more2"
-                    >Saiba mais</a
-                  >
-                  <div class="collapse mt-2" id="more2">
-                    <div class="small-muted">
-                      Notificações locais no celular; lista de oficinas
-                      favoritas e opção de adicionar custos à manutenção.
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="col-12">
-              <div class="row align-items-center g-3 feature-card">
-                <div class="col-md-5">
-                  <img
-                    src="img/growth-2716_256.gif"
-                    alt="Desempenho"
-                    class="print-image"
-                    style="height: 280px"
-                  />
-                </div>
-                <div class="col-md-7">
-                  <h5>Desempenho e estatísticas</h5>
-                  <p class="small-muted">
-                    Gráficos de consumo, custo por km e comparativos mensais
-                    para você entender onde está gastando mais.
-                  </p>
-                  <!-- <a
-                    class="learn-link"
-                    data-bs-toggle="collapse"
-                    href="#more3"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="more3"
-                    >Saiba mais</a
-                  >
-                  <div class="collapse mt-2" id="more3">
-                    <div class="small-muted">
-                      Exportação de relatórios em PDF; filtros por período e por
-                      veículo.
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="col-12">
-              <div
-                class="row align-items-center g-3 feature-card flex-md-row-reverse"
-              >
-                <div class="col-md-5">
-                  <img
-                    src="img/money-5944_256.gif"
-                    alt="Histórico"
-                    class="print-image"
-                    style="height: 280px"
-                  />
-                </div>
-                <div class="col-md-7">
-                  <h5>Histórico completo</h5>
-                  <p class="small-muted">
-                    Acompanhe todas as manutenções, abastecimentos e gastos por
-                    Veículo.
-                  </p>
-                  <!-- <a
-                    class="learn-link"
-                    data-bs-toggle="collapse"
-                    href="#more4"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="more4"
-                    >Saiba mais</a
-                  >
-                  <div class="collapse mt-2" id="more4">
-                    <div class="small-muted">
-                      Anotações por serviço, anexos (foto de nota) e marcação do
-                      custo como reembolsável ou não.
-                    </div>
-                  </div>-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Incentivo / feedback -->
-        <section class="py-4">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="feature-card">
-                <h4 class="mb-2">Me ajude a melhorar o CarDC 🚀</h4>
-                <p class="small-muted mb-2">
-                  Estou buscando pessoas para testar o app. Se puder, baixe, use
-                  por alguns dias e deixe sua opinião na Play Store — isso ajuda
-                  muito a dar movimento ao app.
-                </p>
-                <div class="d-flex gap-2 align-items-center">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.dorcaschagas.car_controll"
-                    class="btn btn-outline-light"
-                    >Avalie na Play Store</a
-                  >
-                  <a
-                    href="https://apps.apple.com/br/app/cardc/id6754003722"
-                    class="btn btn-outline-light"
-                    >Avalie na App Store</a
-                  >
-                  <!-- <a href="#" class="btn btn-light">Enviar feedback (e-mail)</a> -->
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md-4 mt-3 mt-md-0 text-md-end">
-              <div class="small-muted">Compartilhe o convite:</div>
-              <div class="d-flex gap-2 justify-content-md-end mt-2 app-badges">
-                <a
-                  href="#"
-                  title="Compartilhar no WhatsApp"
-                  aria-label="Compartilhar WhatsApp"
-                  ><img
-                    src="https://cdn.iconscout.com/icon/free/png-256/whatsapp-210-569462.png"
-                    alt="WhatsApp"
-                /></a>
-                <a
-                  href="#"
-                  title="Compartilhar no Facebook"
-                  aria-label="Compartilhar Facebook"
-                  ><img
-                    src="https://cdn.iconscout.com/icon/free/png-256/facebook-224-498412.png"
-                    alt="Facebook"
-                /></a>
-                <a
-                  href="#"
-                  title="Compartilhar no LinkedIn"
-                  aria-label="Compartilhar LinkedIn"
-                  ><img
-                    src="https://cdn.iconscout.com/icon/free/png-256/linkedin-97-498467.png"
-                    alt="LinkedIn"
-                /></a>
-              </div>
-            </div> -->
-          </div>
-        </section>
-
-        <!-- Download / links -->
-        <section id="download" class="py-4">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="feature-card d-flex gap-3 align-items-center">
-                <div>
-                  <h5 class="mb-1">Pronto para testar?</h5>
-                  <div class="small-muted">
-                    Clique abaixo para baixar. Depois, use o cupom
-                    <strong>FREE90</strong> ao assinar o plano anual.
-                  </div>
-                  <a
-                    href="https://apps.apple.com/redeem?ctx=offercodes&id=6754003722&code=FREE90"
-                    class="btn btn-accent btn-lg bg-white col-12 col-md-8 m-2" 
-                  >
-                    Resgatar no iOS
-                  </a>
-                  <a
-                    href="https://play.google.com/redeem?code=FREE90"
-                    class="btn btn-accent btn-lg col-12 col-md-8 m-2"
-                  >
-                    Resgatar no Android
-                  </a>
-                </div>
-                <!-- <div class="ms-auto d-flex gap-2">
-                  <a
-                    href="https://apps.apple.com/br/app/cardc/id6754003722"
-                    class="btn btn-light"
-                    >App Store</a
-                  >
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.dorcaschagas.car_controll"
-                    class="btn btn-accent"
-                    >Google Play</a
-                  >
-                </div> -->
-              </div>
-            </div>
-            <!-- <div class="col-md-4 mt-3 mt-md-0 text-md-end small-muted">
-              <div>
-                Quer ver mais detalhes das funcionalidades?
-                <a href="#" class="learn-link">Página completa</a>
-              </div>
-            </div> -->
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer class="py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 small-muted">
-            © <span id="year"></span> CarDC — Todos os direitos reservados
-          </div>
-          <!-- <div class="col-md-6 text-md-end">
-            <a href="#" class="small-muted me-3">Política de Privacidade</a>
-            <a href="#" class="small-muted">Termos de Uso</a>
-          </div> -->
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Receba alertas inteligentes</h3>
+          <p>O CarDC avisa quando está na hora de trocar o óleo, renovar o seguro ou pagar o IPVA.</p>
         </div>
       </div>
-    </footer>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Acompanhe nos relatórios</h3>
+          <p>Veja gráficos e estatísticas de quanto seu veículo custa por mês e onde você pode economizar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<!-- ── CTA FINAL ──────────────────────────────────────────── -->
+<div class="cta-final">
+  <h2>Baixe agora e comece a economizar</h2>
+  <p>Gratuito para Android e iOS. Sem cadastro obrigatório.</p>
+  <div class="cta-group">
+    <a href="https://play.google.com/store/apps/details?id=com.dorcaschagas.car_controll&pcampaignid=web_share" class="btn btn-android">
+      <svg viewBox="0 0 24 24"><path d="M17.523 15.341c-.32 0-.578-.259-.578-.578V9.237c0-.32.259-.578.578-.578s.578.259.578.578v5.526c0 .319-.259.578-.578.578zm-11.046 0c-.32 0-.578-.259-.578-.578V9.237c0-.32.259-.578.578-.578s.578.259.578.578v5.526c0 .319-.258.578-.578.578zm1.945 3.146c0 .475.385.86.86.86s.86-.385.86-.86v-1.573H8.422v1.573zm4.717 0c0 .475.385.86.86.86s.86-.385.86-.86v-1.573h-1.72v1.573zM6.1 8.085C6.1 7.074 6.932 6.25 7.95 6.25h8.1c1.018 0 1.85.824 1.85 1.835v8.033H6.1V8.085zm5.55-5.585L12.5 1l.5 1h-1.35zM7.2 3.2l1 1.5H5.7L7.2 3.2zm9.6 0l1.5 1.5H15.8L16.8 3.2z"/></svg>
+      Baixar no Google Play
+    </a>
+    <a href="https://apps.apple.com/us/app/orthocal-dental-analyses/id6636519508" class="btn btn-ios">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Baixar na App Store
+    </a>
+  </div>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <p>© 2025 CarDC – Controle de Gastos do Carro e Moto &nbsp;·&nbsp; Todos os direitos reservados</p>
+  <p style="margin-top:6px;">
+    <a href="#" style="color:#1976D2; text-decoration:none;">Política de Privacidade</a>
+    &nbsp;·&nbsp;
+    <a href="#" style="color:#1976D2; text-decoration:none;">Termos de Uso</a>
+  </p>
+</footer>
+
+</body>
 </html>
